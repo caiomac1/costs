@@ -5,6 +5,7 @@ import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import NewProject from './components/pages/NewProject';
 import Projects from './components/pages/Projects';
+import Project from './components/pages/Project';
 
 
 import Container from './components/layout/Container';
@@ -24,16 +25,19 @@ function App() {
           <Route exact path="/" element={<Home />} />
         </Routes>
         <Routes>
-          <Route exact path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Routes>
-          <Route exact path="/company" element={<Company />} />
+          <Route path="/company" element={<Company />} />
         </Routes>
         <Routes>
-          <Route exact path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Routes>
-          <Route exact path="/newproject" element={<NewProject />} />
+          <Route path="/newproject" element={<NewProject />} />
+        </Routes>
+        <Routes>
+          <Route path="/project/:id" element={<Project />} />
         </Routes>
       </Container>
       
