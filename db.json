@@ -1,13 +1,6 @@
 {
   "projects": [
     {
-      "id": "cc83",
-      "name": "asdadafafafs",
-      "budget": "99999",
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "4523",
       "name": "projeto teste",
       "budget": "5000",
@@ -19,41 +12,19 @@
       "services": []
     },
     {
-      "id": "44c8",
-      "name": "teste",
-      "budget": "232323",
+      "id": "9b04",
+      "name": "meu projeto",
+      "budget": "15000",
       "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "0894",
-      "name": "teste",
-      "budget": "10391039",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "fa34",
-      "name": "teste",
-      "budget": "12091",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": []
     },
     {
       "id": "9b04",
-      "name": "Meu projeto 3",
+      "name": "meu projeto 3",
       "budget": "15000",
       "category": {
         "id": "3",
@@ -63,12 +34,12 @@
       "services": []
     },
     {
-      "id": "9135",
-      "name": "Meu projeto 4",
-      "budget": "15000",
+      "id": "b994",
+      "name": "Novo Projeto",
+      "budget": "900",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": []
