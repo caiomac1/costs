@@ -8,8 +8,21 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 1100,
+      "services": [
+        {
+          "name": "teste 1",
+          "cost": "100",
+          "description": "asdaod",
+          "id": "077a3b79-f310-4c95-b06f-43dfda69b5df"
+        },
+        {
+          "name": "teste 2",
+          "cost": "1000",
+          "description": "asdaod",
+          "id": "af5ebd3c-6d2f-4953-9721-ee9553d97f5a"
+        }
+      ]
     },
     {
       "id": "9690",
