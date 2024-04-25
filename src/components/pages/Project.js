@@ -142,7 +142,7 @@ function Project () {
             setProject(projectUpdated)
             setServices(servicesUpdated)
             setMessage('Serviço removido com sucesso!')
-            setType('success')
+            setType('error')
         })
 
    }
