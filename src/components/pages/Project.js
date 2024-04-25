@@ -10,6 +10,7 @@ import Container from '../layout/Container'
 import Message from '../layout/Message'
 import ProjectForm from '../project/ProjectForm'
 import ServiceForm from '../service/ServiceForm'
+import ServiceCard from '../service/ServiceCard'
 
 function Project () {
 
@@ -109,14 +110,16 @@ function Project () {
         },
         body: JSON.stringify(project)
     })
-    .then((resp) => resp.json())
-    .then((data) => {
-        // exibir os serviços
-        console.log(data)
-    })
-    .catch((err) => console.log(err))
-    
+        .then((resp) => resp.json())
+        .then((data) => {
+            setShowServiceForm(false)
+        })
+        .catch((err) => console.log(err))
+   }
 
+
+   function removeService () {
+    
    }
 
    function toggleProjectForm () {
@@ -176,7 +179,21 @@ function Project () {
                         <h2>Serviços</h2>
 
                         <Container customClass="start">
-                            <p>Itens de serviços</p>
+                            {services.length > 0 &&
+                                services.map((service) => (
+                                    <ServiceCard 
+                                        id={service.id}
+                                        name={service.name}
+                                        cost={service.cost}
+                                        description={service.description}
+                                        key={service.key}
+                                        handleRemove={removeService}
+                                    
+                                    />
+                                ))
+                            
+                            }
+                            {services.length === 0 && <p>Não há serviços cadastrados.</p>} 
                         </Container>
                     </Container>
                 </div>
