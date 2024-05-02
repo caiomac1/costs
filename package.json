@@ -2,9 +2,7 @@
   "name": "costs",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "20.x"
-  },
+  "homepage": "https://caiomac1.github.io/costs",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -20,6 +18,8 @@
   },
   "scripts": {
     "start": "node ./src/index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "backend": "json-server --watch db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
